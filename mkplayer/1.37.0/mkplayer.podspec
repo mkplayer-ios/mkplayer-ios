@@ -24,14 +24,14 @@ Pod::Spec.new do |spec|
     spec.ios.framework  = 'AVFoundation'
     spec.ios.framework  = 'AVKit'
     spec.ios.framework  = 'WebKit'
-    spec.ios.dependency 'BitmovinPlayer', '3.85.1'
+    spec.ios.dependency 'BitmovinPlayer', '3.85.2'
 
     spec.tvos.vendored_frameworks = 'MKPlayer/MKPlayer.xcframework'
     spec.tvos.framework  = 'Foundation'
     spec.tvos.framework  = 'UIKit'
     spec.tvos.framework  = 'AVFoundation'
     spec.tvos.framework  = 'AVKit'
-    spec.tvos.dependency 'BitmovinPlayer', '3.85.1'
+    spec.tvos.dependency 'BitmovinPlayer', '3.85.2'
     spec.tvos.exclude_files = ['MKPlayer/**/DownloadManager/**', "MKPlayer/**/MKPOMManager.swift", 'MKPlayer/**/Event/Data/Download/**","MKPlayer/**/Event/*Download*','MKPlayer/**/Config/MKPRemoteControlConfiguration.swift', 'MKPlayer/**/Casting/**']
 
     spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=*simulator*]' => 'arm64' }
